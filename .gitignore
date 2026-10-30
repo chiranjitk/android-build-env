@@ -1,0 +1,9 @@
+# repo-level ignores
+*.log
+.build-tmp/
+.DS_Store
+Thumbs.db
+
+# never commit local tokens/credentials at repo root
+gh-token.txt
+TOKEN*
