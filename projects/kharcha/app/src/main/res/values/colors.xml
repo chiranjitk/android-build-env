@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warm palette - no indigo/blue -->
+    <color name="primary">#E65100</color>
+    <color name="primary_dark">#BF360C</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="secondary">#00695C</color>
+    <color name="surface">#FFF8F5</color>
+    <color name="background">#FFFFFF</color>
+    <color name="on_surface">#212121</color>
+    <color name="on_surface_muted">#757575</color>
+    <color name="track">#EFE7E0</color>
+
+    <!-- Launcher -->
+    <color name="ic_launcher_background">#E65100</color>
+
+    <!-- Category colors -->
+    <color name="cat_food">#E65100</color>
+    <color name="cat_transport">#00695C</color>
+    <color name="cat_market">#2E7D32</color>
+    <color name="cat_bill">#F9A825</color>
+    <color name="cat_medicine">#C62828</color>
+    <color name="cat_other">#6D4C41</color>
+</resources>

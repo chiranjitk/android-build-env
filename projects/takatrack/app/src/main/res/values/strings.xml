@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TakaTrack</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="balance">Balance</string>
+    <string name="monthly_expense_chart">Where the money went</string>
+    <string name="new_entry">＋ Add</string>
+    <string name="amount_hint">How much? (₹)</string>
+    <string name="note_hint">Note (optional)</string>
+    <string name="pick_category">Category</string>
+    <string name="save">Save</string>
+    <string name="empty_month">No entries this month yet 🎉</string>
+    <string name="delete_title">Delete entry?</string>
+    <string name="delete_yes">Delete</string>
+    <string name="delete_no">Cancel</string>
+    <string name="err_amount">Enter a valid amount</string>
+    <string name="saved">Saved ✅</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Kharcha" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#FF8A50</item>
+        <item name="colorOnPrimary">#2B1100</item>
+        <item name="colorSecondary">#4DB6AC</item>
+        <item name="android:colorBackground">#141210</item>
+        <item name="colorSurface">#1E1B18</item>
+        <item name="colorOnSurface">#F1EBE6</item>
+        <item name="android:statusBarColor">#141210</item>
+    </style>
+</resources>

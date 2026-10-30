@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warm emerald/amber palette - no indigo/blue -->
+    <color name="primary">#00695C</color>
+    <color name="primary_dark">#004D40</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="accent">#F9A825</color>
+    <color name="income_green">#2E7D32</color>
+    <color name="expense_red">#C62828</color>
+    <color name="surface">#F6FBF9</color>
+    <color name="background">#FFFFFF</color>
+    <color name="on_surface">#1B1B1B</color>
+    <color name="on_surface_muted">#6E6E6E</color>
+    <color name="track">#E0EDE8</color>
+    <color name="ic_launcher_background">#00695C</color>
+
+    <color name="cat_food">#E65100</color>
+    <color name="cat_travel">#00695C</color>
+    <color name="cat_bills">#F9A825</color>
+    <color name="cat_shopping">#8E24AA</color>
+    <color name="cat_health">#C62828</color>
+    <color name="cat_other">#6D4C41</color>
+</resources>

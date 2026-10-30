@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">খরচ</string>
+    <string name="this_month_expense">এই মাসের মোট খরচ</string>
+    <string name="category_breakdown">ক্যাটাগরি অনুযায়ী খরচ</string>
+    <string name="new_expense">নতুন খরচ</string>
+    <string name="amount_hint">কত টাকা? (যেমন ২৫০ বা ২৫০.৫০)</string>
+    <string name="note_hint">কোথায় / কী জন্য? (ঐচ্ছিক)</string>
+    <string name="pick_category">ক্যাটাগরি বাছুন</string>
+    <string name="save">সেভ করুন</string>
+    <string name="empty_month">এই মাসে কোনো খরচ নেই 🎉</string>
+    <string name="delete_title">খরচ মুছবেন?</string>
+    <string name="delete_yes">হ্যাঁ, মুছুন</string>
+    <string name="delete_no">না</string>
+    <string name="err_amount">সঠিক পরিমাণ লিখুন</string>
+    <string name="err_category">ক্যাটাগরি বাছতে হবে</string>
+    <string name="saved">সেভ হয়েছে ✅</string>
+    <string name="prev_month">আগের মাস</string>
+    <string name="next_month">পরের মাস</string>
+    <string name="all_entries">সব খরচ</string>
+</resources>

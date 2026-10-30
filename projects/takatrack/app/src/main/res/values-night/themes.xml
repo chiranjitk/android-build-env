@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.TakaTrack" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#4DB6A0</item>
+        <item name="colorOnPrimary">#00251F</item>
+        <item name="colorSecondary">#FFC947</item>
+        <item name="android:colorBackground">#101413</item>
+        <item name="colorSurface">#18201D</item>
+        <item name="colorOnSurface">#EAF3F0</item>
+        <item name="android:statusBarColor">#101413</item>
+    </style>
+</resources>
