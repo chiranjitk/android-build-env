@@ -1,0 +1,73 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id          String   @id @default(cuid())
+  username    String   @unique
+  displayName String
+  password    String
+  avatarColor String   @default("#00a884")
+  about       String   @default("Hey there! I am using Adda.")
+  lastSeen    DateTime @default(now())
+  createdAt   DateTime @default(now())
+
+  sessions     Session[]
+  participants ConversationParticipant[]
+  messages     Message[]
+}
+
+model Session {
+  id        String   @id @default(cuid())
+  token     String   @unique
+  userId    String
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Conversation {
+  id        String   @id @default(cuid())
+  isGroup   Boolean  @default(false)
+  name      String?
+  createdAt DateTime @default(now())
+
+  participants ConversationParticipant[]
+  messages     Message[]
+}
+
+model ConversationParticipant {
+  id             String   @id @default(cuid())
+  conversationId String
+  userId         String
+  lastReadAt     DateTime @default(now())
+  createdAt      DateTime @default(now())
+
+  conversation Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  user         User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([conversationId, userId])
+  @@index([userId])
+}
+
+model Message {
+  id             String    @id @default(cuid())
+  conversationId String
+  senderId       String
+  content        String
+  type           String    @default("TEXT") // TEXT | IMAGE | AUDIO | SYSTEM
+  mediaUrl       String?
+  replyToId      String?
+  deletedAt      DateTime?
+  createdAt      DateTime  @default(now())
+
+  conversation Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  sender       User         @relation(fields: [senderId], references: [id])
+
+  @@index([conversationId, createdAt])
+}
